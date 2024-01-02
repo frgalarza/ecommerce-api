@@ -9,6 +9,7 @@ export class ClothesController {
     async getAllClothes(){
         try {
             const clothes = await this.clothesService.getAllClothes();
+            
             return clothes;
         } catch (error) {
             throw new Error(error);
